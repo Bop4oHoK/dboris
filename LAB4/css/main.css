@@ -1,0 +1,46 @@
+html {
+    height: 100%;
+}
+
+.content {
+    color: white;
+    padding: 80px;
+    position: relative;
+    text-align: center;
+}
+
+.back {
+    background: url(/LAB3/images/back.png) no-repeat center center fixed;
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.h2main {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 720px) {
+    .content{
+        padding: 10px;
+        padding-top:60px ;
+    }
+    .back {
+        background: url(/LAB3/images/back.png) no-repeat center center fixed;
+        height: 350px;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    .h2main {
+        font-size: 15px;
+    }
+
+}
