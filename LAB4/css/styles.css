@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(87, 89, 88);
+    background: linear-gradient(0deg, rgba(87, 89, 88, 1) 11%, rgba(185, 176, 162, 1) 48%, rgba(246, 246, 246, 1) 90%) no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    background-color: rgb(53, 62, 77);
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color .2s linear;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.logo_link:hover {
+    color: rgb(185, 195, 209);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .2s linear;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+
+    background-color: rgba(185, 195, 209, 0);
+    /*opacity: 0;*/
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    /*transition: opacity .2s linear;*/
+    transition: all .2s linear;
+}
+
+.link:hover {
+    color: rgb(185, 195, 209);
+}
+
+.link:hover::after {
+    background-color: rgba(185, 195, 209, 1);
+    /*opacity: 1;*/
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.other {
+    display: inline-block;
+    text-decoration: none;
+    transition: all .2s linear;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    color: black;
+    font-weight: bold;
+}
+
+.other:hover {
+    color: pink;
+}
+
+.other::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1.5px;
+
+    background-color: rgba(255, 192, 203, 0);
+    /*opacity: 0;*/
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    /*transition: opacity .2s linear;*/
+    transition: all .2s linear;
+}
+
+.other:hover::after {
+    background-color: rgba(255, 192, 203, 1);
+    /*opacity: 1;*/
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    flex: 0 0 auto;
+    text-align: center;
+    background-color: #b9b0a2;
+}

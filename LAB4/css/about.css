@@ -1,0 +1,28 @@
+html {
+    height: 100%;
+}
+
+.content {
+    margin: 0 auto;
+}
+
+.gif {
+    background: url(/LAB3/images/tenor1.gif) no-repeat;
+    height: 300px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+@media screen and (max-width: 720px) {
+    .gif {
+        margin-left: 30px;
+    }
+}
